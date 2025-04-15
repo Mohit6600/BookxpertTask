@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pdfViewerFragment">
+
+    <fragment
+        android:id="@+id/pdfViewerFragment"
+        android:name="com.example.bookxpert.presentation.pdf.PdfViewerFragment"
+        android:label="PDF Viewer"/>
+    <fragment
+        android:id="@+id/imagePickerFragment"
+        android:name="com.example.bookxpert.ImagePickerFragment"
+        android:label="Second"/>
+    <fragment
+        android:id="@+id/fetchApiDataFragment"
+        android:name="com.example.bookxpert.FetchAPIDataFragment"
+        android:label="Third"/>
+</navigation>

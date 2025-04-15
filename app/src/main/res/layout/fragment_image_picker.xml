@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white"
+    tools:context=".ImagePickerFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image Picker"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        app:strokeColor="@android:color/darker_gray"
+        android:backgroundTint="@color/white"
+        app:strokeWidth="1dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCapture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Capture Image"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:layout_marginBottom="12dp"
+                android:textSize="16sp"
+                app:icon="@drawable/ic_camera"
+                app:iconTint="@android:color/black"
+                app:strokeColor="@android:color/black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose from Gallery"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:icon="@drawable/ic_gallery"
+                app:iconTint="@android:color/black"
+                app:strokeColor="@android:color/black" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        app:strokeColor="@android:color/darker_gray"
+        android:backgroundTint="@color/white"
+        app:strokeWidth="1dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="Selected image"
+                android:background="@android:color/transparent" />
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

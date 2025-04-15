@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/pdfViewerFragment"
+        android:icon="@drawable/baseline_topic_24"
+        android:title="PDF" />
+    <item
+        android:id="@+id/imagePickerFragment"
+        android:icon="@drawable/ic_photo_camera_back_24"
+        android:title="Second" />
+    <item
+        android:id="@+id/fetchApiDataFragment"
+        android:icon="@drawable/ic_api_24"
+        android:title="Third" />
+</menu>
