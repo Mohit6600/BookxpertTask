@@ -70,4 +70,4 @@ This Android application demonstrates the integration of modern Android developm
 
 ## Apk
 
-* Debug APK: [Download](app-debug.apk)
+* Debug APK: https://drive.google.com/drive/folders/1mig2uBrSdpA99NrEst8uScoekv-nfBWM?usp=sharing
